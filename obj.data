@@ -1,5 +1,0 @@
-classes = 1 
-train = /yolo/yolov3/train.txt
-valid = /yolo/yolov3/test.txt
-names = /yolo/yolov3/obj.names
-backup= /yolo/yolov3/backup
