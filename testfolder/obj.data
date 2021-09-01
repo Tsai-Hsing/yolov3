@@ -1,0 +1,5 @@
+classes = 1
+train = /content/darknet_test/darknet/testfolder/train.txt
+valid = /content/darknet_test/darknet/testfolder/test.txt
+names = /content/darknet_test/darknet/testfolder//obj.names
+backup = /content/darknet_test/darknet/testfolder/backup
