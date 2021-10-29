@@ -275,11 +275,11 @@ def mainPreLoadModel(path):
         for filename in os.listdir(path):
             if filename.lower().endswith(b'.weights'):
                 modelname = os.path.splitext(filename)[0]
-        fin = open(path.decode() + 'obj.data', 'rt')
+        fin = open(path.decode() + '/obj.data', 'rt')
         data = fin.read()
-        data = data.replace('/mnt/2c67bd82-3031-40f8-8f53-58564ba23509/Graphics/yolo/test/', path.decode()).replace('cfg/' + modelname.decode(),'')
+        data = data.replace('/mnt/2c67bd82-3031-40f8-8f53-58564ba23509/Graphics/yolo/test', path.decode()).replace('cfg/' + modelname.decode(),'')
         fin.close()
-        fin = open(path.decode() + 'obj.data', 'wt')
+        fin = open(path.decode() + '/obj.data', 'wt')
         fin.write(data)
         fin.close()
         net = load_net(path + b"/yolov3.cfg", path + b"/" + modelname + b".weights", 0)
