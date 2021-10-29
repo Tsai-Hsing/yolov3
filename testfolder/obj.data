@@ -1,5 +1,5 @@
 classes = 1
-train = /content/darknet_test/darknet/testfolder/train.txt
-valid = /content/darknet_test/darknet/testfolder/test.txt
-names = /content/darknet_test/darknet/testfolder//obj.names
-backup = /content/darknet_test/darknet/testfolder/backup
+train = /mnt/2c67bd82-3031-40f8-8f53-58564ba23509/Graphics/yolo/test/train.txt
+valid = /mnt/2c67bd82-3031-40f8-8f53-58564ba23509/Graphics/yolo/test/test.txt
+names = /mnt/2c67bd82-3031-40f8-8f53-58564ba23509/Graphics/yolo/test/cfg/yolo_0319/obj.names
+backup = /mnt/2c67bd82-3031-40f8-8f53-58564ba23509/Graphics/yolo/test/backup
