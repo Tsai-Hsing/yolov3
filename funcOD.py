@@ -178,7 +178,7 @@ def mainPredict(image, path, modelName, userDict , graph, sess):
         net = userDict['net']
         meta = userDict['meta']
         lib = userDict['lib']
-        imagepath = path.decode() + '/original.' + image.format.lower()
+        imagepath = path.decode() + '/original.' + userDict["FileExtension"]#image.format.lower()
         #imagepath = os.path.abspath(os.getcwd()) + '/original.' + image.format.lower()
         image.save(imagepath)
         r = detect(lib, net, meta, bytes(imagepath, 'ascii'))   
