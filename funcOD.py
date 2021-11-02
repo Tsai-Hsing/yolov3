@@ -185,7 +185,7 @@ def mainPredict(image, path, modelName, userDict , graph, sess):
         for cls, score, bbox in r:
             obj = {
                         'class':cls,
-                        'classResult':[{'score': str(score),'BoundingBox':[str(bbox[0]), str(bbox[1]), str(bbox[2]), str(bbox[3])],'Value':[str(bbox[0]), str(bbox[1]), str(bbox[2]), str(bbox[3])]}],
+                        'classResult':[{'score': str(score),'BoundingBox':[str(bbox[0]), str(bbox[1]), str(bbox[2]), str(bbox[3])],'Value':[str(bbox[0]), str(bbox[1]), str(bbox[2]), str(bbox[3])]}]
                         }
             if len(data['result']) == 0:
                 data['result'].append(obj)
